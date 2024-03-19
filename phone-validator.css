@@ -1,0 +1,143 @@
+html {
+    overflow-y: hidden
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(143, 26, 252), rgb(81, 1, 155));
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 30px
+}
+
+.phone {
+    background-color: black;
+    width: 230px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.camera {
+    background-color: rgb(192, 192, 192);
+    width: 11px;
+    height: 11px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.screen {
+    width: 87%;
+    height: 80%;
+    background-color: rgb(218, 222, 228);
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.final {
+    height: 25px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.final:hover {
+    cursor: pointer;
+} 
+
+
+.buttons {
+    display: flex;
+    flex-direction: row; 
+    position: absolute;
+    /* border: 1px blue solid; */
+    bottom: 10px; 
+    margin: 0 auto;
+}
+
+.clear {
+    margin-left: 20px;
+    background-color: rgb(255, 101, 101)
+}
+
+.check {
+    margin-left: 10px;
+    background-color: rgb(92, 224, 92)
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);  
+    grid-template-rows: repeat(4, 29px);
+    gap: 3px;
+    position: absolute;
+    top: 190px;
+    padding-left: 6px;
+    padding-right: 3px;  
+}
+
+.numbers > button {
+    font-size: 15px;
+}
+
+.numbers > button:hover {
+    background-color: rgb(255, 199, 251);
+    cursor: pointer;
+}
+button {
+    border: none;
+}
+
+#home-btn {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(218, 222, 228);
+    position: relative; 
+    top: 33px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px rgb(154, 154, 154) solid;
+
+}
+
+
+input {
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 22px;
+    width: 90%;
+    text-align: center;
+    resize: none; 
+    padding: 55px 0;
+    overflow: hidden;
+}
+
+input:focus {
+    outline: none;
+}
+
+#input-div {
+    text-align: center;
+    padding-top: 20px
+}
+
+#results-div {
+ margin-top: -30px;
+
+}
+h3 {
+ font-size: 25px; 
+ text-align: center;
+}
